@@ -1,0 +1,84 @@
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>编发馆</title>
+    <link rel="stylesheet" href="css/other.css" />
+    <script src="js/modernizr.custom.97074.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="intro">
+        <div class="hdb-bg">
+
+            <div class="hdb-box">
+                <img src="images/pc_22.jpg" style="margin-top:10px;border-radius: 50%  ">
+                <img src="images/44.jpg">
+                <ul class="hdb-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="./aboutus.html">公司简介</a></li>
+                    <li><a href="./jmys.html">加盟优势</a></li>
+                    <li><a href="./product.html">编发案例</a></li>
+                    <li><a href="./contacts.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about-bg">
+            <div class="case-tit"></div>
+            <div class="about-box">
+                <ul id="da-thumbs" class="da-thumbs">
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/1.jpg">
+                            <div><span>丸子头</span></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/2.jpg">
+                            <div><span>花苞头</span></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/3.jpg">
+                            <div><span>蝎子辫</span></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/040.jpg">
+                            <div><span>蜈蚣辫</span></div>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="new-fy">当前第<font color='red'>1</font>页&nbsp;共<font color='red'>2</font>页&nbsp;每页<font color='red'>4</font>条&nbsp;共有<font color='red'>5</font>条&nbsp;<a href="#">下页</a>&nbsp;<a href="#">末页</a>&nbsp;<script>function gopgno(str){if(str!=''){ if(str>2){str=2;}   window.location.href="#"+str;}}</script>至第<input type='text' id='cxnowpggovnooknetsoftok' class='pagegoval' value='' style='width:50px;ime-mode:disabled' onblur="this.value=this.value.replace(/[^0-9]/g,'');" maxlength='7' />页 <span class='gopagebtn' style='cursor:pointer' onclick="gopgno(document.getElementById('cxnowpggovnooknetsoftok').value);">Go</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-footer"><p>编发馆</p><img src="images/pic_48.png" class="about-fd"></div>
+    <img src="images/pic_47.png" class="about-qq">
+
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $(' #da-thumbs > li ').each(function () { $(this).hoverdir(); });
+
+    });
+</script>
+</body>
+</html>
